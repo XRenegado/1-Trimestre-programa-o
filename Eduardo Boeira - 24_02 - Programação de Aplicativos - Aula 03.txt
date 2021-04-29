@@ -1,0 +1,226 @@
+﻿1-class Main {
+  public static void main(String args[]) { 
+    
+    double nota1 = 6.7;
+    double nota2 = 5.3;
+    
+    double media = (nota1 + nota2) / 2;
+    
+    if(media >= 7) {
+        System.out.println("Sua média é: " + media + ". Você passou.");
+    } else {
+        System.out.println("Sua média é: " + media + ". Você está de recuperação.");
+        
+        double recuperacao = 8.5;
+        double mediaRec = (media + recuperacao) / 2;
+        
+        System.out.println("MEDIArec: " + mediaRec);
+        
+        if(mediaRec >= 7) {
+            System.out.println("Sua média final é: " + mediaRec + " Você passou com recuperação.");
+        } else {
+            System.out.println("Sua média final é: " + mediaRec + " Você reprovou.");
+        }
+        
+    }
+   
+    
+  } 
+}
+
+
+2-import java.util.Scanner;
+class Main {
+  public static void main(String args[]) { 
+
+
+    System.out.println("CÓDIGO: ; PRODUTO: ; PREÇO: \n" +
+    "1; Cachorro Quente ; R$: 4,00\n" +
+    "2;    X-Salada     ; R$: 4,50\n" +
+    "3;    X-Bacon      ; R$: 5,00\n" +
+    "4; Torrada Simples ; R$: 2,00\n" +
+    "5;  Refrigerante   ; R$: 1,50\n");
+
+
+    double cod1 = 4.00;
+    double cod2 = 4.50;
+    double cod3 = 5.00;
+    double cod4 = 2.00;
+    double cod5 = 1.50;
+
+
+    double produto = 0;
+    int codigo;
+    double quantidade;
+    double valor;
+
+
+    Scanner leitor = new Scanner(System.in);
+
+
+    System.out.println("Informe o código do produto.");
+    codigo = leitor.nextInt();
+
+
+    if(codigo == 1){
+      produto = cod1;
+    }else if(codigo == 2){
+      produto = cod2;
+    }else if(codigo == 3){
+      produto = cod3;
+    }else if(codigo == 4){
+      produto = cod4;
+    }else if(codigo == 5){
+      produto = cod5;
+    }else{
+      System.out.println("Código não identificado.");
+    }
+    //System.out.println(produto);
+    
+    System.out.println("Informe a quantidade do produto.");
+    quantidade = leitor.nextDouble();
+    valor = (produto * quantidade);
+    System.out.println("O valor a pagar pela compra será de: R$" + valor);
+
+
+  }
+}
+
+
+3- eu perdi meuu txt :/
+
+
+
+
+
+
+
+
+4- 
+
+
+package domain; 
+
+
+public class HelloWorld { public static void main(String[] args) { 
+
+
+    double A = 1 - 0.10;
+    double B = 1 - 0.15;
+    double C = 1 - 0.20;
+    double D = 1 + 0.05;
+    double valor = 60.00;
+    double classf = D;
+
+
+    if(classf ==Aclassf ==Bclassf ==C){ 
+        double descontof = valorclassf;
+        double desconto = valor-descontof;
+
+
+        System.out.println("Valor: "+valor);
+        System.out.println("Valor final: "+descontof);
+        System.out.println("Desconto: "+desconto);
+
+
+        } else{
+            double acrescimof = valorclassf;
+            double acrescimo = acrescimof-valor;
+
+
+            System.out.println("Valor: "+valor);
+            System.out.println("Valor final: "+acrescimof);
+            System.out.println("Acréscimo: "+acrescimo); 
+
+
+        } 
+
+
+    }
+}
+5- 
+package domain; 
+
+
+public class HelloWorld { public static void main(String[] args) { 
+int n = 5, aux = 0, resSoma = 0;
+        for(int i=1; i<=20; i++, n+=5){
+
+
+           if(i%2 == 1){//se é impar
+               aux = n;
+           }else{//se é par
+               aux = (-1)*n;
+           }
+           resSoma += aux;
+           System.out.println(aux);
+        }
+        System.out.println("Resultado da Soma é "+resSoma);
+}
+6-
+
+
+public class Qst6 {
+
+
+    public static void main(String[] args) {
+
+
+        int t = 480;
+        int b = 10;
+
+
+        System.out.println(t);
+        System.out.println("---");
+        System.out.println(b + "\n");
+
+
+        for (int i = 1; i <= 30; i++) {
+            if (t > 0) {
+                t = -t + 5;
+            } else {
+                t = -t - 5;
+            }
+            b = b + 1;
+
+
+            System.out.println(t);
+            System.out.println("---");
+            System.out.println(b + "\n");
+        }
+    }
+}
+7-
+
+
+class Main {
+  public static void main(String[] args) {
+
+
+    int i = 0;
+    int num1 = 0;
+    int num2 = 0;
+    int total1 = 0;
+    int total2 = 0;
+
+
+    while(i < 10){
+      i++;
+      num1 = num1 + 2;
+      num2 = num2 + 1;
+
+
+      if(num2%2 != 0){
+          System.out.println(num1 + "/" + num2);
+          total1 = total1 + num1;
+          total2 = total2 + num2;
+      }
+      else{
+        System.out.println("-" + num1 + "/" + num2);
+        total1 = total1 - num1;
+        total2 = total2 + num2;
+      }
+    }
+    System.out.println("O valor de S é: " + total1 + "/" + total2 + "!");
+  }
+}

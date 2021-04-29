@@ -1,0 +1,32 @@
+drop database if exists dbaluno;
+create database dbaluno;
+use dbaluno;
+
+create table aluno(
+	IDaluno int not null primary key auto_increment,
+	nome varchar(45),
+	sexo enum("m", "f"),
+	idade int,
+	cidade varchar(30)
+);
+
+insert into aluno(nome, sexo, idade, cidade) values('jose' ,'m',17, 'Florianópolis');
+insert into aluno(nome, sexo, idade, cidade) values('xr' ,'m',19, 'Tijucas');
+insert into aluno(nome, sexo, idade, cidade) values('leonardo' ,'m',78, 'tubarão');
+insert into aluno(nome, sexo, idade, cidade) values('melissa' ,'f',89, 'joinville');
+insert into aluno(nome, sexo, idade, cidade) values('gabriel' ,'m',8, 'caxias do sul');
+insert into aluno(nome, sexo, idade, cidade) values('valentina' ,'f',45, 'porto alegre');
+insert into aluno(nome, sexo, idade, cidade) values('manoela' ,'f',3, 'Florianópolis');
+insert into aluno(nome, sexo, idade, cidade) values('daniel' ,'m',87, 'joinville');
+insert into aluno(nome, sexo, idade, cidade) values('galhardo' ,'m',58, 'porto alegre');
+insert into aluno(nome, sexo, idade, cidade) values('bianca' ,'f',19, 'Tijucas');
+insert into aluno(nome, sexo, idade, cidade) values('palacios' ,'m',47, 'Florianópolis');
+insert into aluno(nome, sexo, idade, cidade) values('guerrero' ,'m',65, 'tubarão');
+insert into aluno(nome, sexo, idade, cidade) values('vilma' ,'f',32, 'caxias do sul');
+insert into aluno(nome, sexo, idade, cidade) values('monica' ,'f',24, 'joinville');
+insert into aluno(nome, sexo, idade, cidade) values('cuesta' ,'m',96, 'Florianópolis');
+insert into aluno(nome, sexo, idade, cidade) values('heitor' ,'m',14, 'Tijucas');
+insert into aluno(nome, sexo, idade, cidade) values('yuri' ,'m',54, 'porto alegre');
+insert into aluno(nome, sexo, idade, cidade) values('daniela' ,'f',41, 'joinville');
+insert into aluno(nome, sexo, idade, cidade) values('carla' ,'f',23, 'tubarão');
+insert into aluno(nome, sexo, idade, cidade) values('edenilson' ,'m',19, 'caxias do sul');

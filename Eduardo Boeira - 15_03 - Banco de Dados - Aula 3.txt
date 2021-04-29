@@ -1,0 +1,53 @@
+﻿Atividades 
+
+
+
+
+1.
+
+
+        CREATE DATABASE registros;
+
+
+        USE registros;
+
+
+
+
+        CREATE TABLE registro(
+        NOME VARCHAR(100);
+        SOBRENOME VARCHAR(100);
+        EMAIL VARCHAR(100);
+        SENHA INT NOT NULL AUTO_INCREMENT;
+        CHAR (“M” , “F”)
+DTDENASCIMENTO DATE;
+PRIMARY KEY (SENHA);
+);
+
+
+
+
+
+
+4. 
+
+
+        USE registros; 
+
+
+        
+        CREATE TABLE  LIVRO(
+        IDLIVRO INT PRIMARY KEY AUTO_INCREMENT
+TITULO VARCHAR(100);
+AUTOR VARCHAR(100);
+EDITORA VARCHAR (100);
+ANO_DE_PUBLICACAO INT NOT NULL
+        
+);
+
+
+        CREATE TABLE BIBLIOTECA( 
+
+
+); 
+        INSERT INTO BIBLIOTECA (LIVRO) VALUES (TITULO, AUTOR, EDITORA, ANO_DE_PUBLICACAO);
